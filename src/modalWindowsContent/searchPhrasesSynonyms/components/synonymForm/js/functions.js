@@ -72,6 +72,9 @@ function SubmitBtn({formik, editableSynonym, existingSynonyms}) {
 
 export async function onSubmitHandler(values, dispatch, existingSynonyms, editableSynonym, formik) {
 
+    // Очистить форму
+    formik.resetForm()
+
     // Если синоним редактируют, то обновить значение существующего в Хранилище
     if(editableSynonym) {
         let newSynonym = {...editableSynonym}
@@ -97,8 +100,7 @@ export async function onSubmitHandler(values, dispatch, existingSynonyms, editab
         dispatch(setSynonyms(newSynonym))
     }
 
-    // Очистить форму
-    formik.resetForm()
+
 }
 
 function exitEditableMode(dispatch) {
