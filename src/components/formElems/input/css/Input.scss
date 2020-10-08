@@ -1,0 +1,28 @@
+@import '../../../app/css/variables';
+
+.input__label {
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: lowercase;
+    color: #787878;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 18px;
+    color: $text-color;
+    background-color: transparent;
+    padding: 11px 0 10px 0;
+    border: none;
+    border-bottom: 1px solid rgba(52, 66, 115, 0.5);
+
+    &::placeholder {
+        color: rgba(52, 66, 115, 0.5);
+    }
+
+    &:focus {
+        border-bottom-color: #344273;
+    }
+}

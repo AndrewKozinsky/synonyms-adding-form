@@ -1,0 +1,34 @@
+@import "../../../../app/css/variables";
+
+.button {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    user-select: none;
+    background-color: $brand-100-color;
+    padding: 8px 12px;
+    border: none;
+    border-radius: $radius;
+
+    &:disabled {
+        background-color: $brand-50-color;
+        opacity: .5;
+    }
+
+    &:focus {
+        color: $brand-100-color;
+        background-color: white;
+        padding: 6px 10px;
+        border: 2px solid $brand-100-color;
+    }
+}
+
+.button--accept {
+    background-color: #5E9574;
+}
+
+.button--reset {
+    background-color: #955E5E;
+}

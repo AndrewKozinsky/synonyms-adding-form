@@ -1,0 +1,49 @@
+@import '../../../../../components/app/css/variables';
+
+
+.synonyms-cards {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.synonym-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 11px;
+    border-radius: $radius;
+}
+
+.synonym-card__name {
+    padding-right: 10px;
+}
+
+.synonym-card__right-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+
+.synonym-card__btn {
+    width: 14px;
+    height: 14px;
+    opacity: .5;
+    background-color: red;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    margin-top: 4px;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.synonym-card__btn--edit {
+    background: url("../icons/pen.svg");
+}
+
+.synonym-card__btn--delete {
+    background: url("../icons/trash.svg");
+}

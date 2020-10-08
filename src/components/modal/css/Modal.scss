@@ -1,0 +1,51 @@
+@import "../../app/css/variables";
+
+.modal__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba($text-color, .5);
+}
+
+.modal__modal {
+    flex-grow: 1;
+    max-width: 560px;
+    //min-height: 560px;;
+    background: #EFEFEF;
+    padding: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .25);
+}
+
+.modal__header-section {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    padding: 0 0 10px 0;
+    border-bottom: 2px solid #DEDEDE;
+    margin-bottom: 20px;
+}
+
+.modal__header-text {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+.modal__header-right-side {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal__content-section {
+    overflow: auto;
+}
+
+.modal__content-footer {
+    border-top: 2px solid #DEDEDE;
+    padding-top: 20px;
+    margin-top: 30px;
+}

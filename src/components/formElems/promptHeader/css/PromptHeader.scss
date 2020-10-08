@@ -1,0 +1,24 @@
+@import "../../../app/css/variables";
+
+.prompt-header {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.prompt-header__text {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    color: $gray-color-2;
+    padding: 0 10px 0 0;
+}
+
+.prompt-header__question-btn {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background: url("../icons/icon.svg");
+    background-repeat: no-repeat;
+    border: none;
+    margin-top: 4px;
+}

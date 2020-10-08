@@ -1,0 +1,2 @@
+import SearchPhrasesSynonymsBottom from './SearchPhrasesSynonymsBottom'
+export default SearchPhrasesSynonymsBottom
